@@ -8,8 +8,8 @@ import {Carousel} from "../../../components/Carousel";
 import {AUDIENCE, CONTENT, PRICE, REVIEWS} from "../data.ts";
 import {CarouselContentItem} from "./CarouselContentItem.tsx";
 import KirillImg from '../../../assets/imgs/kirill.png';
-import {VideoPlayer} from "../../../modules/VideoPlayer";
-import Video from '../../../assets/videos/exmpl.mp4';
+//import {VideoPlayer} from "../../../modules/VideoPlayer";
+//import Video from '../../../assets/videos/exmpl.mp4';
 import {CarouselPriceItem} from "./CarouselPriceItem.tsx";
 import {CarouselReviewsItem} from "./CarouselReviewsItem.tsx";
 
@@ -55,7 +55,7 @@ export const MainPage = () => {
                 <div className="flex flex-col gap-6 lg:gap-16 mt-20 xl:mt-37 items-center">
                     <Title title="Адаптируем каждый воркшоп с учётом последних обновлений AI-инструментов"
                            subTitle="Всё на реальных кейсах участников"/>
-                    <VideoPlayer src={Video}/>
+                    {/*<VideoPlayer src={Video}/>**/}
                 </div>
                 <h3 className="lg:hidden flex text-[30px] font-semibold text-black mt-20 mb-6">
                     Ведущий воркшопа

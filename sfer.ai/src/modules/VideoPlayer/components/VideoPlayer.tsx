@@ -130,7 +130,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, className
             {!isPlaying && (
                 <button
                     onClick={togglePlay}
-                    className="absolute inset-0 flex items-center justify-center w-full h-full bg-black/40 hover:bg-black/30 transition-all duration-300 group"
+                    className="absolute inset-0 flex items-center justify-center w-full h-full bg-black/40 hover:bg-black/30 transition-all duration-300 group cursor-pointer"
                 >
                     <div className={`flex items-center gap-3 ${hasPlayed ? 'bg-blue-600/90 group-hover:bg-blue-500' : 'bg-white'} rounded-full p-3 transition-all duration-300 group-hover:scale-105 shadow-2xl`}>
                         <svg className={`w-8 h-8 ${hasPlayed ? 'text-white' : 'text-blue-600'}`} fill="currentColor" viewBox="0 0 24 24">
@@ -166,7 +166,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, className
                     <div className="flex items-center space-x-4">
                         <button
                             onClick={togglePlay}
-                            className="text-white hover:text-blue-200 transition-colors duration-200 p-1 rounded-full hover:bg-white/10"
+                            className="text-white hover:text-blue-200 transition-colors duration-200 p-1 rounded-full hover:bg-white/10 cursor-pointer"
                         >
                             {isPlaying ? (
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -201,7 +201,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, className
                     </div>
                     <button
                         onClick={() => videoRef.current?.requestFullscreen()}
-                        className="text-blue-300 hover:text-white transition-colors duration-200 p-1 rounded-full hover:bg-white/10"
+                        className="text-blue-300 hover:text-white transition-colors duration-200 p-1 rounded-full hover:bg-white/10 cursor-pointer"
                     >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
